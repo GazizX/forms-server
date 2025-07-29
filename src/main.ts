@@ -25,7 +25,7 @@ async function bootstrap(): Promise<void> {
   );
   app.use(cors({
     origin: ['http://localhost:5173', 'https://admin-panel-six-sandy.vercel.app'],
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+    methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
     credentials: true
   }));
